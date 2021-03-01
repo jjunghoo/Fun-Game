@@ -2,9 +2,9 @@
 import PopUp from './popup.js';
 
 const CARROT_SIZE = 80;
-const CARROT_COUNT = 25;
-const BUG_COUNT = 25;
-const GAME_DURATION_SEC = 15;
+const CARROT_COUNT = 20;
+const BUG_COUNT = 20;
+const GAME_DURATION_SEC = 10;
 
 const field = document.querySelector('.game__field');
 const fieldRect = field.getBoundingClientRect();
