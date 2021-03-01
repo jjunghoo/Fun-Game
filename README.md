@@ -1,2 +1,2 @@
 # Fun-Game
-jjunghoo.github.io/Fun-Game
+https://jjunghoo.github.io/Fun-Game
