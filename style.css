@@ -9,6 +9,11 @@ body {
     background-color: black;
 }
 
+.title h1 {
+    font-size: 32px;
+    color: white;
+}
+
 .game {
     display: flex;
     flex-direction: column;
