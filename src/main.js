@@ -4,7 +4,7 @@ import Game from './game.js';
 
 
 const gameFinishBanner = new PopUp();
-const game = new Game(5, 5, 5);
+const game = new Game(5, 10, 10);
 game.setGameStopListener((reason) => {
     console.log(reason);
     let message;
