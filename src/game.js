@@ -1,4 +1,4 @@
-import Field from './field.js';
+import { Field, ItemType } from './field.js';
 import * as sound from './sound.js';
 
 export const Reason = Object.freeze({
@@ -8,7 +8,7 @@ export const Reason = Object.freeze({
 });
 
 // Builder Pattern
-export default class GameBuilder {
+export class GameBuilder {
     withGameDuration(duration) {
         this.gameDuration = duration;
         return this;
@@ -87,14 +87,14 @@ class Game {
             return;
         }
         // console.log(event);
-        if(item === 'carrot') {
+        if(item === ItemType.carrot) {
             // 당근!!
             this.score++;
             this.updateScoreBoard();
             if (this.score === this.carrotCount) {
                 this.stop(Reason.win);
             }
-        } else if (item === 'bug') {
+        } else if (item === ItemType.bug) {
             // 벌레!!
             this.stop(Reason.lose);
         }
